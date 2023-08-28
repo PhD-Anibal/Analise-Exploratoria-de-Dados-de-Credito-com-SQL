@@ -31,7 +31,7 @@ Reposta: 2564 linhas (representa pouco mais do 25%)
 
 É criada uma tabela no Athena definindo o tipo de dado de cada coluna. Conferimos os primeiros dados da tabela: SELECT * FROM credito LIMIT 10
 
-image.png
+![Dados](dados.png)
 
 Esta vista previa serve para ter uma ideia da qualidade dos dados e se percebe que dependenod do tipo de análise poderia ser necessario um tratamento já que encontramos valores nulos.
 
@@ -39,7 +39,7 @@ Para ter uma ideia dos diferentes valores que podemos encontrar em algumas colun
 
 (onde nome_coluna é o nome da coluna da tabela que vamos relacionar na seguinte imagem)
 
-image.png
+![Tipos_dados](tipos_dados.png)
 
 Para ter uma relação de quantos nulos temos e ver se é uma cantidad consideravel utilizamos a seguinte query (em este caso os valores nulos não são campos vazios, estão almacenados na base de dados com o texto 'na')
 
@@ -56,25 +56,25 @@ Podemos apreciar que no campo de escolaridade tem a maior proporção de em que 
 
 Análise de uso do cartão de crédito: analisando como os clientes estão usando seus cartões de crédito, como o tipo de cartão que possuem e a quantidade de produtos comprados nos últimos 12 meses. Isso pode ajudar a identificar oportunidades para aumentar o uso do cartão de crédito, como oferecer incentivos para os clientes usarem mais o cartão ou criar programas de fidelidade.
 
-image.png
+![Perfil](perfil.png)
 
 Pode verse que é significativamente maior a quantidade de clientes que usam o cartão blue, podendo sugerir alterações nos outros programas para tornarem eles mais atrativos para os clientes. Tambem poderiamos ver programas para incentivar mais o uso do cartão platinum que aparentemente não é muito utilizado
 
 Análise de atividade financeira: examinamos as transações e a atividade financeira dos clientes nos últimos 12 meses, incluindo a quantidade de transações, o valor total das transações e os meses inativo. Isso pode ajudar a identificar padrões de comportamento do cliente e identificar oportunidades para oferecer produtos financeiros adicionais ou serviços personalizados. Consultando o valor máximo e mínimo dividimos os clientes em 5 grupos dependendo a quantidade de transações: os que tem "menos de 25", "entre 25 e 50", "entre 50 e 75" e "maior de 75". query:
 
-image.png
+![Agrupamento](agrupamento.png)
 
-image.png!image.png
+![Agrupamento_resultados](agrupamento_result.png)
+
+![Agrupamento_grafico](agrupamento_graf.png)
 
 Esta consulta pode ajudar a identificar padrões de comportamento dos clientes e identificar oportunidades para oferecer produtos financeiros adicionais ou serviços personalizados. Principalmente se observa que os que movimentaram mais dinheiro são o grupo que fizeram entre 25 e 50 transações nos ultimos 12 meses.
 
 Aproveitamos pra ver como está composto este grupo entre 25 e 50 transações nos últimos 12 meses. Queremos saber a proporção de renda salarial de esse grupo. query:
 
-image.png
+![Salario](salario.png)
 
-image.png
-
-image.png
+![salario_grafico](salario_graf.png)
 
 Em essa faixa de transações, se percebe que os que mais utilizam o cartão são os de salario menor de USD 40k anual, porem os que menos utilizam o cartão são os de faixa salarial acima de USD 120k e gastam mais em esses 12 meses.
 
