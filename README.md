@@ -23,7 +23,7 @@ Exploração de dados extraidos do dataset: [link](https://github.com/andre-marc
 
 ## Fase exploratoria:
 
-Como o banco de dados original tem 10128 linhas, diminuiremos os custos do derviço Athena utilizando uma amostra representativa disponibilizada pela profissional Mariane Neiva.
+Como o banco de dados original tem 10128 linhas, diminuiremos os custos do serviço Athena utilizando uma amostra representativa disponibilizada pela profissional Mariane Neiva.
 
 Tamanho do banco de dados: Query: SELECT count(*) FROM credito
 
